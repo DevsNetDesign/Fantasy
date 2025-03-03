@@ -6,4 +6,15 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Entites\MasterData\" />
+    <Folder Include="Entites\Gestion\" />
+    <Folder Include="Entites\DashBoard\" />
+    <Folder Include="Entites\Inventory\" />
+    <Folder Include="Entites\IndustrialSecurity\" />
+    <Folder Include="Entites\Reports\" />
+    <Folder Include="Entites\Purchase\" />
+    <Folder Include="Entites\Parameters\" />
+  </ItemGroup>
+
 </Project>
