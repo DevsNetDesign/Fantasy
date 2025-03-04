@@ -12,6 +12,8 @@ public class Repository : IRepository
         _httpClient = httpCliente;
     }
 
+    public HttpClient HttpCliente { get; }
+
     private JsonSerializerOptions _jsonDefaultOptions => new JsonSerializerOptions
     {
         PropertyNameCaseInsensitive = true,
@@ -25,7 +27,8 @@ public class Repository : IRepository
             var response = await UnserializeAnswer<T>(responseHttp);
             return new HttpResponseWrapper<T>(response, false, responseHttp);
         }
-        throw new NotImplementedException();
+
+        return new HttpResponseWrapper<T>(default, true, responseHttp);
     }
 
     public async Task<HttpResponseWrapper<object>> PostAsync<T>(string url, T model)

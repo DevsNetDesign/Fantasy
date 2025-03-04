@@ -14,7 +14,23 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Localization" Version="9.0.2" />
     <PackageReference Include="System.Net.Http" Version="4.3.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Pages\DashBoard\" />
+    <Folder Include="Pages\Gestion\" />
+    <Folder Include="Pages\IndustrialSecurity\" />
+    <Folder Include="Pages\Inventory\" />
+    <Folder Include="Pages\MasterData\" />
+    <Folder Include="Pages\Parameters\" />
+    <Folder Include="Pages\Purchase\" />
+    <Folder Include="Pages\Reports\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Fantasy.Shared\Fantasy.Shared.csproj" />
   </ItemGroup>
 
 </Project>
