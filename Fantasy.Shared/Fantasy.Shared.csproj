@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <Folder Include="Entites\MasterData\" />
-    <Folder Include="Entites\Gestion\" />
     <Folder Include="Entites\DashBoard\" />
     <Folder Include="Entites\Inventory\" />
     <Folder Include="Entites\IndustrialSecurity\" />
